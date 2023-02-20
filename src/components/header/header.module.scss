@@ -1,0 +1,29 @@
+.wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 35px;
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+  }
+
+  img {
+    @media (max-width: 600px) {
+      width: 200px;
+    }
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+      background-color: #fb3600;
+      color: #fff;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  // margin-top: 15px;
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  input {
+    border-radius: 3px;
+    padding-left: 8px;
+    width: 98.5%;
+    height: 45px;
+    // background: red;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #fff;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 21px;
+      text-transform: capitalize;
+      padding-left: 8px;
+      @media (max-width: 700px) {
+        color: #8b8b8b;
+        font-size: 14px;
+        font-family: Roboto;
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 11px;
+    top: 14px;
+  }
+  .errorMessage {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -17px;
+  }
+}
+
+input[type="time"] {
+  color: transparent;
+  display: block;
+
+  &:invalid {
+    &::before {
+      color: #fff;
+      content: attr(placeholder);
+      background-color: rgb(255, 255, 255);
+      width: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      pointer-events: none;
+      position: absolute;
+    }
+  }
+}
+input[type="time"]:valid,
+input[type="time"]:focus {
+  color: #fff;
+}
+input[type="time"]:valid::before,
+input[type="time"]:focus::before {
+  display: none;
+}
+
+input[type="password"] {
+  &::placeholder {
+    position: relative;
+    top: 4px;
+    left: 5px;
+  }
+}

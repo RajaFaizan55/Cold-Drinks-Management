@@ -1,0 +1,34 @@
+.parent_div {
+  background-image: url("../../assets/bg2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 70px;
+    color: #ffffff;
+    padding: 100px 0px;
+    @media (max-width: 1000px) {
+      font-size: 40px;
+      padding: 15px 0px;
+    }
+  }
+}
+
+.canSec {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  @media (max-width: 1450px) {
+    grid-template-columns: 1fr;
+  }
+}
+.canSec2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  @media (max-width: 1450px) {
+    grid-template-columns: 1fr;
+  }
+}

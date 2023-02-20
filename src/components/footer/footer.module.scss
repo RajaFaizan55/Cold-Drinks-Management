@@ -1,0 +1,21 @@
+.wraper {
+  padding: 15px;
+  background-color: #040716;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 600px) {
+    justify-content: space-around;
+  }
+  span {
+    margin-right: 30px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    @media (max-width: 600px) {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.wraper {
+  .parent_div {
+    background-image: url("../../assets/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    @media (max-width: 600px) {
+      padding-top: 0px;
+    }
+
+    .textSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p {
+        color: #fff;
+        padding: 5px 715px 70px 715px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        @media (max-width: 600px) {
+          padding: 0px;
+          font-size: 13px;
+          margin: 0px;
+        }
+        @media (max-width: 1580px) {
+          padding: 0px 30px;
+        }
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 70px;
+        color: #fff;
+        @media (max-width: 740px) {
+          margin: 0px;
+          font-size: 20px;
+        }
+        @media (max-width: 1300px) {
+          font-size: 42px;
+        }
+        @media (max-width: 540px) {
+          font-size: 20px;
+        }
+        @media (max-width: 300px) {
+          font-size: 15px;
+        }
+      }
+      img {
+        padding-bottom: 100px;
+        @media (max-width: 600px) {
+          padding-bottom: 45px;
+          padding: 0px;
+          margin-bottom: 5px;
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  .canSec {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .canSec2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      span {
+        padding: 0px 90px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(4, 7, 22, 0.8);
+        @media (max-width: 800px) {
+          padding: 0px 15px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .mapSec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+    }
+    .mapDesc {
+      display: flex;
+      flex-direction: column;
+      padding: 100px 100px;
+      @media (max-width: 800px) {
+        padding: 10px 10px;
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #040716;
+      }
+    }
+  }
+}
